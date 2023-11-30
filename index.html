@@ -7,24 +7,38 @@
     <title>TodoListApp</title>
     <link rel="stylesheet" href="./public/styles.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css" integrity="sha512-ym1f+T15aiJGZ1y6zs1XEpr8qheyBcOPqjFYNf2UfRmfIt5Pdsp7SD5O74fmsFB+rxxO6ejRqiooutodoNSjRQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css"
+      integrity="sha512-ym1f+T15aiJGZ1y6zs1XEpr8qheyBcOPqjFYNf2UfRmfIt5Pdsp7SD5O74fmsFB+rxxO6ejRqiooutodoNSjRQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" src="/main.js" defer></script>
-    
   </head>
   <body>
     <div
       id="app"
       class="bg-[#242424] w-screen h-screen flex justify-center items-center relative"
     >
-    <!-- first gradient blob -->
-      <div class="absolute top-16 left-20 bg-pink-500 w-96  rounded-full backdrop-blur-lg hover:bg-opacity-100 duration-500 bg-opacity-60 h-96 blur-3xl"></div>
-
+      <!-- first gradient blob -->
+      <div
+        class="absolute top-16 left-20 bg-pink-500 w-96 rounded-full backdrop-blur-lg hover:bg-opacity-100 duration-500 bg-opacity-60 h-96 blur-3xl"
+      ></div>
 
       <div
         class="w-96 relative h-[500px] bg-white bg-opacity-20 overflow-hidden backdrop-blur-sm rounded-sm"
       >
-        <div class="h-20 bg-white text-center my-2 mx-2 px-5 flex justify-center items-center">
+        <div
+          class="h-20 bg-white text-center my-2 mx-2 px-5 flex justify-center items-center"
+        >
           <i class="fa-solid fa-note-sticky text-blue-500 text-[25px]"></i>
         </div>
         <div
@@ -37,16 +51,18 @@
               placeholder="Add Tasks here"
               class="px-4 py-3 rounded-l-md border outline-none bg-gray-50 border-blue-500"
             />
-            <button class="rounded-r-md hover:bg-blue-600 duration-300 bg-blue-500 h-[50px] w-[70px] flex justify-center items-center">
+            <button
+              class="rounded-r-md hover:bg-blue-600 duration-300 bg-blue-500 h-[50px] w-[70px] flex justify-center items-center"
+            >
               <i class="fa-solid text-white text-[25px] fa-square-plus"></i>
             </button>
           </div>
-          <div class="h-[80%] border-t " id="box">
-                <template id="tasks" class="flex justify-between gap-4">
-                  <input type="checkbox" name="" id="check">
-                      <span id="span"></span>
-                      <i class="fa-regular fa-trash-can"></i>
-                </template>
+          <div class="h-[80%] border-t flex flex-col gap-5" id="box">
+            <template id="tasks" class="flex bg-blue-500 justify-between items-center gap-4">
+              <input type="checkbox" name="" id="check" />
+              <span id="span"></span>
+              <i class="fa-regular fa-trash-can"></i>
+            </template>
           </div>
         </div>
       </div>

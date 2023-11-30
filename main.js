@@ -27,17 +27,26 @@
 const input=document.querySelector('input')
 const button=document.querySelector('button')
 const box=document.querySelector("#box")
-const span=document.querySelector('span')
+const span=document.getElementById('span')
+
 
 const handleAdd=()=>{
-   const li= document.createElement('span')
+
    if(input.value===''){
        alert('fill')
    }
    else{
-    console.log(document.getElementById("tasks").cloneNode===true)
+    const l=input.value
+    console.log(l);
+   
+    box.appendChild(document.getElementById("tasks").content.cloneNode(true))
+      console.log(
+        box.appendChild(
+          document.getElementById("tasks")
+        ).firstElementChild
+      );
    }
-   input.innerHTML=''
+  
 }
 
 button.addEventListener('click',handleAdd)
