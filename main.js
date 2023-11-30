@@ -40,11 +40,7 @@ const handleAdd=()=>{
     console.log(l);
    
     box.appendChild(document.getElementById("tasks").content.cloneNode(true))
-      console.log(
-        box.appendChild(
-          document.getElementById("tasks")
-        ).firstElementChild
-      );
+     
    }
   
 }
