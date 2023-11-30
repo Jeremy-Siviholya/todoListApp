@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TodoListApp</title>
     <link rel="stylesheet" href="./public/styles.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
@@ -18,17 +18,20 @@
       <div
         class="w-96 relative h-[500px] bg-white bg-opacity-20 overflow-hidden backdrop-blur-sm rounded-sm"
       >
-        <div class="h-20 bg-white text-center mb-1"></div>
-        <div class="h-[332px] bg-white overflow-y-auto flex flex-col gap-4">
+        <div class="h-20 bg-white text-center my-2 mx-2"></div>
+        <div class="h-[395px] bg-white mx-2 rounded-b-md overflow-y-auto flex flex-col gap-4">
           <div class="h-[20%] flex justify-center items-center">
-            <input type="search" id="search" class="px-4 py-2 rounded-l-full border outline-none  border-orange-600">
-            <div class="rounded-r-full bg-orange-600 h-11 w-11"></div>
+            <input
+              type="search"
+              id="search"
+              placeholder="Add Tasks here"
+              class="px-4 py-3 rounded-l-md border outline-none bg-gray-50 border-pink-600"
+            />
+            <div class="rounded-r-md bg-pink-600 h-[50px] w-[80px]"></div>
           </div>
           <div class="h-[80%] border-t"></div>
         </div>
-        <div
-          class="absolute bottom-0 h-20 bg-white left-0 right-0 w-full"
-        ></div>
+      
       </div>
     </div>
   </body>
