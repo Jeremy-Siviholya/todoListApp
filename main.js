@@ -22,3 +22,22 @@
 // `
 
 // setupCounter(document.querySelector('#counter'))
+
+
+const input=document.querySelector('input')
+const button=document.querySelector('button')
+const box=document.querySelector("#box")
+const span=document.querySelector('span')
+
+const handleAdd=()=>{
+   const li= document.createElement('span')
+   if(input.value===''){
+       alert('fill')
+   }
+   else{
+    console.log(document.getElementById("tasks").cloneNode===true)
+   }
+   input.innerHTML=''
+}
+
+button.addEventListener('click',handleAdd)
