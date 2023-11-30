@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoListApp</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <script type="module" src="/main.js" defer></script>
+  </head>
+  <body>
+    <div
+      id="app"
+      class="bg-[#242424] w-screen h-screen flex justify-center items-center"
+    >
+      <div
+        class="w-96 relative h-[500px] bg-white bg-opacity-20 overflow-hidden backdrop-blur-sm rounded-sm"
+      >
+        <div class="h-20 bg-white text-center mb-1"></div>
+        <div class="h-[332px] bg-white overflow-y-auto flex flex-col gap-4">
+          <div class="h-[20%] flex justify-center items-center">
+            <input type="search" id="search" class="px-4 py-2 rounded-l-full border outline-none  border-blue-700">
+            <div class="rounded-r-full bg-blue-700 h-11 w-11"></div>
+          </div>
+          <div class="h-[80%] border-t"></div>
+        </div>
+        <div
+          class="absolute bottom-0 h-20 bg-white left-0 right-0 w-full"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
