@@ -29,6 +29,8 @@ const button=document.querySelector('button')
 const box=document.querySelector("#box")
 const span=document.getElementById('span')
 const alertDanger = document.querySelector(".danger-alert");
+ const nodeL = document.getElementById("tasks").content.cloneNode(true);
+    const firstel=nodeL.firstElementChild
 
 
 const handleAdd=(e)=>{
@@ -37,10 +39,10 @@ const handleAdd=(e)=>{
    }
    else{
     const l=input.value
-    let nodeL = document.getElementById("tasks").content.cloneNode(true);
-    box.appendChild(nodeL)
-   console.log( nodeL.hasChildNodes());
-
+   
+ 
+    box.appendChild(nodeL);
+    firstel.querySelector('span').innerHTML=l
    }
   
 }
