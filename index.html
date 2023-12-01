@@ -32,6 +32,20 @@
       <div
         class="absolute top-16 left-20 bg-pink-500 w-96 rounded-full backdrop-blur-lg animate-blob hover:bg-opacity-100 duration-500 bg-opacity-60 h-96 blur-3xl"
       ></div>
+      <!-- second gradient blob -->
+      <div class="absolute bottom-32 w-96 h-96 z-50 right-20">
+        <div class="relative w-full h-full">
+          <div
+            class="mix-blend-multiply filter blur-2xl w-72 h-72 top-0 -left-4 absolute rounded-full animate-blobs bg-yellow-500"
+          ></div>
+          <div
+            class="mix-blend-multiply filter blur-2xl w-72 h-72 absolute -right-4 top-0 rounded-full animate-blobs bg-pink-500"
+          ></div>
+          <div
+            class="mix-blend-multiply filter blur-2xl w-72 h-72 absolute -bottom-0 left-20 animate-blobs rounded-full bg-purple-500"
+          ></div>
+        </div>
+      </div>
 
       <div
         class="w-96 relative h-[500px] bg-white bg-opacity-20 overflow-hidden backdrop-blur-sm rounded-sm"
@@ -39,9 +53,10 @@
         <div
           class="h-20 bg-white text-center my-2 mx-2 px-5 flex justify-start gap-4 items-center"
         >
-       
           <i class="fa-solid fa-clipboard text-blue-500 text-[25px]"></i>
-          <h1 class="text-2xl text-gray-500 selection:bg-pink-400">TO DO LIST TASKS</h1>
+          <h1 class="text-2xl text-gray-500 selection:bg-pink-400">
+            TO DO LIST TASKS
+          </h1>
         </div>
         <div
           class="h-[395px] bg-white mx-2 rounded-b-md overflow-y-auto flex flex-col gap-4"
@@ -59,13 +74,22 @@
               <i class="fa-solid text-white text-[25px] fa-square-plus"></i>
             </button>
           </div>
-          <div class="h-[80%] border-t flex flex-col gap-4 overflow-y-auto py-5 " id="box">
+          <div
+            class="h-[80%] border-t flex flex-col gap-4 overflow-y-auto py-5"
+            id="box"
+          >
             <template id="tasks">
-              <div  class="flex bg-gray-50 justify-between items-center px-10 w-full min-h-12">
+              <div
+                class="flex bg-gray-50 justify-between items-center px-10 w-full min-h-12"
+              >
                 <input type="checkbox" name="" id="check" />
-              
-              <span id="span" class="text-gray-500 font-semibold">TASK ONE</span>
-              <i class="fa-regular fa-trash-can text-[25px] text-blue-500"></i>
+
+                <span id="span" class="text-gray-500 font-semibold"
+                  >TASK ONE</span
+                >
+                <i
+                  class="fa-regular fa-trash-can text-[25px] text-blue-500"
+                ></i>
               </div>
             </template>
           </div>

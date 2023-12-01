@@ -15,6 +15,7 @@ export default {
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
       blob: "blob 7s infinite alternate",
+      blobs: "blobs 7s infinite alternate",
     },
     extend: {
       keyframes: {
@@ -32,6 +33,20 @@ export default {
           "100%": {
             opacity: "100%",
             background: "purple",
+            transform: "scale(1)",
+          },
+        },
+        blobs: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "33%": {
+            transform: "scale(1.1)",
+          },
+          "66%": {
+            transform: "scale(0.9)",
+          },
+          "100%": {
             transform: "scale(1)",
           },
         },
