@@ -3,4 +3,6 @@
 @tailwind utilities;
 
 
-
+.show{
+    @apply animate-toastify
+}

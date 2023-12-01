@@ -28,19 +28,19 @@ const input=document.querySelector('input')
 const button=document.querySelector('button')
 const box=document.querySelector("#box")
 const span=document.getElementById('span')
+const alertDanger = document.querySelector(".danger-alert");
 
 
-const handleAdd=()=>{
-
-   if(input.value===''){
-       alert('fill')
+const handleAdd=(e)=>{
+   if(input.value==='' ){    
+       alertDanger.classList.add('show')
    }
    else{
     const l=input.value
-    console.log(l);
-   
-    box.appendChild(document.getElementById("tasks").content.cloneNode(true))
-     
+    let nodeL = document.getElementById("tasks").content.cloneNode(true);
+    box.appendChild(nodeL)
+   console.log( nodeL.hasChildNodes());
+
    }
   
 }

@@ -16,6 +16,7 @@ export default {
       bounce: "bounce 1s infinite",
       blob: "blob 7s infinite alternate",
       blobs: "blobs 7s infinite alternate",
+      toastify:"toastify 5s alternate"
     },
     extend: {
       keyframes: {
@@ -49,6 +50,18 @@ export default {
           "100%": {
             transform: "scale(1)",
           },
+        },
+        toastify: {
+          "0%": {
+            top:'-50px'
+           
+          },
+          "50%": {
+            top: "16px",      
+          },
+          "100%":{
+            top:"-50px"
+          }
         },
       },
     },
