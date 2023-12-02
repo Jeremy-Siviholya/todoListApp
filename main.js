@@ -23,49 +23,30 @@
 
 // setupCounter(document.querySelector('#counter'))
 
-
-const input=document.querySelector('input')
-const button=document.querySelector('button')
-const box=document.querySelector("#box")
-const span=document.getElementById('span')
+const input = document.querySelector("input");
+const button = document.querySelector("button");
+const box = document.querySelector("#box");
+const span = document.getElementById("span");
 const alertDanger = document.querySelector(".danger-alert");
 
-
-const handleAdd=(e)=>{
-   if(input.value==='' ){   
-    setInterval(()=>{
-        alertDanger.classList.add('show')
-    },5000) 
-   }
-   else{
+const handleAdd = (e) => {
     const nodeL = document.getElementById("tasks").content.cloneNode(true);
     const firstel = nodeL.firstElementChild;
-    const value=input.value
+  if (input.value == "") {
+    alertDanger.classList.add("show");
+  } else {
+    const value = input.value;
     box.appendChild(nodeL);
-    firstel.querySelector('span').innerHTML=value
-    const btn=firstel.querySelector('button')
-    btn.addEventListener('click',()=>deleteTasks(firstel))
-
-    saveData(firstel)
-   
-   } 
+    firstel.querySelector("span").innerHTML = value;
+    const btn = firstel.querySelector("button");
+    btn.addEventListener("click", () => deleteTasks(firstel));
 }
+};
 
-const deleteTasks=(element)=>{
-    element.remove()
-    
-    return element
-}
-
-const saveData=(data)=>{
-        localStorage.setItem('data',data.innerHTML)
-        return data
-}
-
-const showTask=(el)=>{
-el.innerHTML=localStorage.getItem("data")
-return el
-}
+const deleteTasks = (element) => {
+  element.remove();
+  return element;
+};
 
 
-button.addEventListener('click',handleAdd)
+button.addEventListener("click", handleAdd);
