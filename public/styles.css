@@ -1023,6 +1023,10 @@ video {
   animation: blobs 7s infinite alternate;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .touch-auto {
   touch-action: auto;
 }
