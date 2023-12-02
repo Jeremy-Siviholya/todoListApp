@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.show{
-    @apply top-4 duration-300
+.show {
+  @apply top-4
 }
 
-.hide{
-    @apply -top-20 duration-300
+.hide {
+  @apply -top-20
 }

@@ -2682,7 +2682,7 @@ video {
 }
 
 .hide {
-  display: none;
+  top: -5rem;
 }
 
 @media (min-width: 640px) {
