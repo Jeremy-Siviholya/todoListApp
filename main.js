@@ -40,17 +40,32 @@ const handleAdd=(e)=>{
    else{
     const nodeL = document.getElementById("tasks").content.cloneNode(true);
     const firstel = nodeL.firstElementChild;
-    const l=input.value
+    const value=input.value
     box.appendChild(nodeL);
-    firstel.querySelector('span').innerHTML=l
+    firstel.querySelector('span').innerHTML=value
     const btn=firstel.querySelector('button')
     btn.addEventListener('click',()=>deleteTasks(firstel))
+
+    saveData(firstel)
+   
    } 
 }
 
 const deleteTasks=(element)=>{
     element.remove()
+    
     return element
 }
+
+const saveData=(data)=>{
+        localStorage.setItem('data',data.innerHTML)
+        return data
+}
+
+const showTask=(el)=>{
+el.innerHTML=localStorage.getItem("data")
+return el
+}
+
 
 button.addEventListener('click',handleAdd)
