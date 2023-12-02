@@ -19,24 +19,42 @@
         class="absolute top-16 left-20 bg-pink-500 w-96 rounded-full backdrop-blur-lg animate-blob hover:bg-opacity-100 duration-500 bg-opacity-60 h-96 blur-3xl"
       ></div>
       <!-- second gradient blob -->
-      <div class="absolute bottom-10 w-96 h-96  right-16">
+      <div class="absolute bottom-10 w-96 h-96 right-16">
         <div class="relative w-full h-full">
           <div
-            class="mix-blend-multiply blur-2xl bg-opacity-70 w-72 h-72 top-0  -left-4 absolute rounded-full animate-blobs bg-yellow-500"
+            class="mix-blend-multiply blur-2xl bg-opacity-70 w-72 h-72 top-0 -left-4 absolute rounded-full animate-blobs bg-yellow-500"
           ></div>
           <div
-            class="mix-blend-multiply blur-2xl bg-opacity-70 w-72 h-72 absolute  -right-4 top-0 rounded-full animate-blobs bg-pink-500"
+            class="mix-blend-multiply blur-2xl bg-opacity-70 w-72 h-72 absolute -right-4 top-0 rounded-full animate-blobs bg-pink-500"
           ></div>
           <div
-            class="mix-blend-multiply blur-2xl bg-opacity-70 w-72 h-72 absolute  -bottom-0 left-20 animate-blobs rounded-full bg-purple-500"
+            class="mix-blend-multiply blur-2xl bg-opacity-70 w-72 h-72 absolute -bottom-0 left-20 animate-blobs rounded-full bg-purple-500"
           ></div>
         </div>
       </div>
+      <!-- danger alert -->
+      <div
+        class="absolute right-4 -top-20 bg-gradient-to-tr from-yellow-400 to-orange-500 duration-500 cursor-default w-72 h-14 flex justify-between px-7 z-50 rounded-md items-center danger-alert"
+      >
+        <span class="text-white font-semibold uppercase">complete task</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6 text-white"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
       <!-- alert success -->
       <div
-        class="absolute right-4 -top-20 bg-white w-72 h-16 alert-success cursor-default  justify-between px-3 rounded-md items-center"
+        class="absolute right-4 z-50 -top-20 bg-white w-72 h-14 alert-success duration-500 cursor-default flex justify-between px-3 rounded-md items-center"
       >
-        <span class="text-gray-600 font-semibold uppercase"
+        <span class="text-green-500 font-semibold uppercase"
           >task successfully added</span
         >
         <svg
@@ -53,30 +71,29 @@
         </svg>
       </div>
 
-      <!-- danger alert -->
-
+      <!-- Destroy alert -->
       <div
-        class="absolute right-4 -top-20 bg-gradient-to-tr from-yellow-400 to-yellow-500 duration-500 cursor-default  w-72 h-14 flex justify-between px-7 z-50 rounded-md items-center danger-alert"
+        class="absolute right-4 z-50 -top-20 bg-white w-72 h-14 alert-destroy duration-500 cursor-default flex justify-between px-3 rounded-md items-center"
       >
-        <span class="text-white font-semibold uppercase">complete task</span>
+        <span class="text-red-500 font-semibold uppercase">task Destroyed</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="w-6 h-6 text-white"
+          class="w-6 h-6 text-red-500"
         >
           <path
             fill-rule="evenodd"
-            d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
             clip-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="w-96 relative h-[500px] bg-white bg-opacity-20 overflow-hidden backdrop-blur-sm rounded-sm"
+        class="w-96 relative h-[500px] bg-white bg-opacity-40  overflow-hidden backdrop-blur-lg rounded-md"
       >
         <div
-          class="h-20 bg-white text-center my-2 mx-2 px-5 flex justify-start gap-4 items-center"
+          class="h-20 bg-white text-center mt-3 mx-3 px-5 flex rounded-t-md justify-start gap-4 items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -96,12 +113,10 @@
             />
           </svg>
 
-          <h1 class="text-2xl text-gray-500">
-            TO DO LIST TASKS
-          </h1>
+          <h1 class="text-2xl text-gray-500">TO DO LIST TASKS</h1>
         </div>
         <div
-          class="h-[395px] bg-white mx-2 rounded-b-md overflow-y-auto flex flex-col gap-4"
+          class="h-[395px] bg-white mx-3 rounded-b-md overflow-y-auto flex flex-col gap-4"
         >
           <div class="h-[20%] flex justify-center items-center">
             <input
@@ -111,29 +126,22 @@
               class="px-4 py-3 rounded-l-md border outline-none bg-gray-50 border-blue-500"
             />
             <button
-              class="rounded-r-md hover:bg-blue-600 duration-300 bg-blue-500 h-[50px] w-[70px] flex justify-center items-center"
+              class="rounded-r-md hover:bg-blue-600 duration-300 bg-blue-500 h-[50px] w-[60px] flex justify-center items-center"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6 text-white"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M19.5 21a3 3 0 003-3V9a3 3 0 00-3-3h-5.379a.75.75 0 01-.53-.22L11.47 3.66A2.25 2.25 0 009.879 3H4.5a3 3 0 00-3 3v12a3 3 0 003 3h15zm-6.75-10.5a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V10.5z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white font-semibold">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+</svg>
+
+             
             </button>
           </div>
           <div
-            class="h-[80%] border-t flex flex-col gap-4 overflow-y-auto py-5"
+            class="h-[80%] border-t scroll flex flex-col gap-4 overflow-y-auto py-5"
             id="box"
           >
             <template id="tasks">
               <div
-                class="flex bg-gray-50 justify-between items-center px-10 w-full py-2"
+                class="flex bg-white border rounded-md  justify-between items-center px-5 mx-5 w-[88%] py-2"
               >
                 <input type="checkbox" name="" id="check" />
 

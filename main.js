@@ -4,6 +4,7 @@ const box = document.querySelector("#box");
 const span = document.getElementById("span");
 const alertDanger = document.querySelector(".danger-alert");
 const alertSuccess = document.querySelector(".alert-success");
+const alertDestroy = document.querySelector(".alert-destroy");
 
 const handleAdd = (e) => {
   const nodeL = document.getElementById("tasks").content.cloneNode(true);
@@ -23,6 +24,7 @@ const handleAdd = (e) => {
 
 const deleteTasks = (element) => {
   element.remove();
+  showAlert(alertDestroy)
   return element;
 };
 
@@ -31,11 +33,11 @@ const closeAlert = (el) => {
   return el;
 };
 
-const showAlert = (element) => {
-  element.classList.add("show");
+const  showAlert = async (element) => {
+ await element.classList.add("show");
   setTimeout(() => {
     element.classList.add("hide");
-  }, 7000);
+  }, 10000);
 };
 
 closeAlert(alertDanger);

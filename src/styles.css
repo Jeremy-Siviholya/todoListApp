@@ -3,9 +3,21 @@
 @tailwind utilities;
 
 .show {
-  @apply top-4
+  @apply top-4;
 }
 
 .hide {
-  @apply -top-20
+  @apply -top-20;
+}
+
+.scroll::-webkit-scrollbar {
+  @apply w-[6px] rounded-full;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full;
+}
+
+.scroll::-webkit-scrollbar-track {
+  @apply bg-gray-200;
 }
