@@ -15,16 +15,22 @@ const handleAdd = (e) => {
     const value = input.value;
     box.appendChild(nodeL);
     showAlert(alertSuccess);
-
     firstel.querySelector("span").innerHTML = value;
     const btn = firstel.querySelector("button");
+    const check = firstel.querySelector("input");
+    check.addEventListener('click',()=>verify)
     btn.addEventListener("click", () => deleteTasks(firstel));
+    input.value='';
   }
 };
 
+const verify=(e)=>{
+    e.target.classList.add('check')
+}
+
 const deleteTasks = (element) => {
   element.remove();
-  showAlert(alertDestroy)
+  showAlert(alertDestroy);
   return element;
 };
 
@@ -33,8 +39,8 @@ const closeAlert = (el) => {
   return el;
 };
 
-const  showAlert = async (element) => {
- await element.classList.add("show");
+const showAlert = async (element) => {
+  await element.classList.add("show");
   setTimeout(() => {
     element.classList.add("hide");
   }, 10000);

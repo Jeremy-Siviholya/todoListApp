@@ -2691,9 +2691,11 @@ video {
 
 .scroll::-webkit-scrollbar {
   width: 6px;
+  border-radius: 9999px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
@@ -2701,6 +2703,10 @@ video {
 .scroll::-webkit-scrollbar-track {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.ckeck {
+  accent-color: #f87171;
 }
 
 @media (min-width: 640px) {
