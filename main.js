@@ -1,4 +1,3 @@
-
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const box = document.querySelector("#box");
@@ -7,26 +6,19 @@ const alertDanger = document.querySelector(".danger-alert");
 const alertSuccess = document.querySelector(".alert-success");
 
 const handleAdd = (e) => {
-    const nodeL = document.getElementById("tasks").content.cloneNode(true);
-    const firstel = nodeL.firstElementChild;
+  const nodeL = document.getElementById("tasks").content.cloneNode(true);
+  const firstel = nodeL.firstElementChild;
   if (input.value == "") {
-   
-        alertDanger.classList.add("show");
-        setTimeout(() => {
-             alertDanger.classList.add("hide");
-        }, 7000);
-    
+    showAlert(alertDanger);
   } else {
     const value = input.value;
     box.appendChild(nodeL);
-      alertSuccess.classList.add("show");
-      setTimeout(() => {
-        alertDanger.classList.add("hide");
-      }, 7000);
+    showAlert(alertSuccess);
+
     firstel.querySelector("span").innerHTML = value;
     const btn = firstel.querySelector("button");
     btn.addEventListener("click", () => deleteTasks(firstel));
-}
+  }
 };
 
 const deleteTasks = (element) => {
@@ -34,12 +26,19 @@ const deleteTasks = (element) => {
   return element;
 };
 
-const closeAlert=(el)=>{
-    el.addEventListener('click',(e)=> e.target.classList.add('hide'))
-    return el
-}
+const closeAlert = (el) => {
+  el.addEventListener("click", (e) => e.target.classList.add("hide"));
+  return el;
+};
 
-closeAlert(alertDanger)
-closeAlert(alertSuccess)
+const showAlert = (element) => {
+  element.classList.add("show");
+  setTimeout(() => {
+    element.classList.add("hide");
+  }, 7000);
+};
+
+closeAlert(alertDanger);
+closeAlert(alertSuccess);
 
 button.addEventListener("click", handleAdd);
