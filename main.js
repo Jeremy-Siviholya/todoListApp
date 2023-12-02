@@ -9,7 +9,12 @@ const handleAdd = (e) => {
     const nodeL = document.getElementById("tasks").content.cloneNode(true);
     const firstel = nodeL.firstElementChild;
   if (input.value == "") {
-    alertDanger.classList.add("show");
+   
+        alertDanger.classList.add("show");
+        setTimeout(() => {
+             alertDanger.classList.add("hide");
+        }, 7000);
+    
   } else {
     const value = input.value;
     box.appendChild(nodeL);

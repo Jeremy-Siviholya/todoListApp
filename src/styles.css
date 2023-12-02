@@ -4,5 +4,9 @@
 
 
 .show{
-    @apply animate-toastify
+    @apply top-4 duration-300
+}
+
+.hide{
+    @apply -top-20 duration-300
 }
