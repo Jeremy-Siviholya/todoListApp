@@ -31,10 +31,11 @@ const span=document.getElementById('span')
 const alertDanger = document.querySelector(".danger-alert");
 
 
-
 const handleAdd=(e)=>{
-   if(input.value==='' ){    
-       alertDanger.classList.add('show')
+   if(input.value==='' ){   
+    setInterval(()=>{
+        alertDanger.classList.add('show')
+    },5000) 
    }
    else{
     const nodeL = document.getElementById("tasks").content.cloneNode(true);
@@ -42,9 +43,14 @@ const handleAdd=(e)=>{
     const l=input.value
     box.appendChild(nodeL);
     firstel.querySelector('span').innerHTML=l
+    const btn=firstel.querySelector('button')
+    btn.addEventListener('click',()=>deleteTasks(firstel))
+   } 
+}
 
-   }
-  
+const deleteTasks=(element)=>{
+    element.remove()
+    return element
 }
 
 button.addEventListener('click',handleAdd)
