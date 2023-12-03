@@ -16,9 +16,39 @@ export default {
       bounce: "bounce 1s infinite",
       blob: "blob 7s infinite alternate",
       blobs: "blobs 7s infinite alternate",
-      toastify:"toastify 5s alternate"
+      toastify: "toastify 5s alternate",
     },
     extend: {
+      colors: {
+        perfect: {
+          100: "#E5005C",
+          200: "#FF0055",
+          300: "#F60062",
+          400: "#FF0066",
+        },
+        perfectGreen: {
+          100: "#00A084",
+          200: "#00AA87",
+          300: "#00FF66",
+        },
+        perfectBlue: {
+          100: "#00B6E3",
+          200: "#0066FF",
+        },
+        perfectGray: {
+          100: "#1D1D1D",
+          200: "#151515",
+          300: "#1A2027",
+          400: "#1A1A1A",
+        },
+        perfectWhite: {
+          100: "#FAF2F5",
+          200: "#FAFAFA",
+        },
+      },
+      boxShadow:{
+        perfectInset:""
+      },
       keyframes: {
         blob: {
           "0%": {
@@ -53,15 +83,14 @@ export default {
         },
         toastify: {
           "0%": {
-            top:'-50px'
-           
+            top: "-50px",
           },
           "50%": {
-            top: "16px",      
+            top: "16px",
           },
-          "100%":{
-            top:"-50px"
-          }
+          "100%": {
+            top: "-50px",
+          },
         },
       },
     },
