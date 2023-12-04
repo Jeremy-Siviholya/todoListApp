@@ -46,8 +46,10 @@ export default {
           200: "#FAFAFA",
         },
       },
-      boxShadow:{
-        perfectInset:""
+      boxShadow: {
+        perfectInset: `0px 40px 80px 0px rgba(0, 0, 0, 0.05),
+                       inset 0px -10px 20px 0px rgba(0, 0, 0, 0.05),
+                       0px 10px 20px 0px rgba(0, 0, 0, 0.05)`,
       },
       keyframes: {
         blob: {
