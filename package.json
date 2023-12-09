@@ -12,5 +12,8 @@
   "devDependencies": {
     "tailwindcss": "^3.3.5",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "boxicons": "^2.1.4"
   }
 }
