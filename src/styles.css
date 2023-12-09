@@ -15,13 +15,11 @@
 }
 
 .scroll::-webkit-scrollbar-thumb {
-  @apply bg-gray-600 rounded-full;
+  @apply bg-perfect-200 rounded-full;
 }
 
 .scroll::-webkit-scrollbar-track {
-  @apply bg-gray-200;
+  @apply bg-perfectGray-100
 }
 
-.ckeck{
-    @apply accent-red-400
-}
+

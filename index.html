@@ -99,7 +99,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"
-            class="w-6 h-6 text-gray-600"
+            class="w-6 h-6 text-white"
           >
             <path
               fill-rule="evenodd"
@@ -113,20 +113,20 @@
             />
           </svg>
 
-          <h1 class="text-2xl text-gray-500">TO DO LIST TASKS</h1>
+          <h1 class="text-2xl text-white">TO DO LIST TASKS</h1>
         </div>
         <div
-          class="h-[395px] bg-white mx-3 rounded-b-md overflow-y-auto flex flex-col gap-4"
+          class="h-[395px] bg-perfectGray-100 mx-3 rounded-b-md overflow-y-auto flex flex-col gap-4"
         >
           <div class="h-[20%] flex justify-center items-center">
             <input
               type="text"
               id="search"
               placeholder="Add Tasks here"
-              class="px-4 py-3 rounded-l-md border outline-none bg-gray-50 border-blue-500"
+              class="px-4 py-3 rounded-l-full border-none outline-none bg-perfectGray-200 text-white"
             />
             <button
-              class="rounded-r-md hover:bg-blue-600 duration-300 bg-blue-500 h-[50px] w-[60px] flex justify-center items-center"
+              class="rounded-r-full border-none outline-none hover:bg-perfect-200 duration-300 bg-perfect-300 h-[48px] w-[60px] flex justify-center items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,11 +150,14 @@
           >
             <template id="tasks">
               <div
-                class="flex bg-white border rounded-md justify-between items-center px-5 mx-5 w-[88%] py-2"
+                class="flex bg-perfectGray-200  rounded-sm justify-between items-center px-5 mx-5 w-[88%] py-2"
               >
-                <input type="checkbox" name="" id="check" />
+              <div class="rounded-full w-5 h-5 bg-perfectGray-100">
+                 
+              </div>
+                <!-- <input type="checkbox" name="" id="check" /> -->
 
-                <span id="span" class="text-gray-500 font-semibold"
+                <span id="span" class="text-white font-semibold"
                   >TASK ONE</span
                 >
                 <button>
@@ -162,7 +165,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    class="w-6 h-6 text-pink-400 hover:text-red-500 duration-300"
+                    class="w-6 h-6 text-perfect-300 hover:text-perfect-400 duration-300"
                   >
                     <path
                       fill-rule="evenodd"
