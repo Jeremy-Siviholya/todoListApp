@@ -15,12 +15,13 @@ const handleAdd = (e) => {
     const value = input.value;
     box.appendChild(nodeL);
     showAlert(alertSuccess);
+    input.value == "";
     firstel.querySelector("span").innerHTML = value;
     const btn = firstel.querySelector("button");
     const check = firstel.querySelector("input");
     check.addEventListener('click',()=>verify)
     btn.addEventListener("click", () => deleteTasks(firstel));
-    input.value='';
+    
   }
 };
 
@@ -36,7 +37,6 @@ const deleteTasks = (element) => {
 
 const closeAlert = (el) => {
   el.addEventListener("click", (e) =>{
-     e.target.classList.remove("hide")?.e.target.classList.add('hide')
      e.target.classList.add('hide')
   }
   )
