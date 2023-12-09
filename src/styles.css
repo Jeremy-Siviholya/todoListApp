@@ -22,10 +22,6 @@
   @apply bg-perfectGray-100
 }
 
-.icon{
-  padding: 5px;
-  @apply bg-perfect-400;
-  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 25%)
-}
+
 
 
