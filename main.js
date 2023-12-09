@@ -35,7 +35,11 @@ const deleteTasks = (element) => {
 };
 
 const closeAlert = (el) => {
-  el.addEventListener("click", (e) => e.target.classList.add("hide"));
+  el.addEventListener("click", (e) =>{
+     e.target.classList.remove("hide")?.e.target.classList.add('hide')
+     e.target.classList.add('hide')
+  }
+  )
   return el;
 };
 
