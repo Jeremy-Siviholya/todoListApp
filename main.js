@@ -7,7 +7,6 @@ const alertSuccess = document.querySelector(".alert-success");
 const alertDestroy = document.querySelector(".alert-destroy");
 const check = document.querySelector(".check");
 
-
 const handleAdd = (e) => {
   const nodeL = document.getElementById("tasks").content.cloneNode(true);
   const firstel = nodeL.firstElementChild;
@@ -17,14 +16,15 @@ const handleAdd = (e) => {
     const value = input.value;
     box.appendChild(nodeL);
     showAlert(alertSuccess);
-    input.value=''
+    input.value = "";
     firstel.querySelector("span").innerHTML = value;
     const btn = firstel.querySelector("button");
     btn.addEventListener("click", () => deleteTasks(firstel));
+    firstel.querySelector("i").addEventListener("click", (e) => {
+      e.target.classList.toggle('text-perfectGreen-300');
+    });
   }
 };
-
-
 
 const deleteTasks = (element) => {
   element.remove();
@@ -33,19 +33,18 @@ const deleteTasks = (element) => {
 };
 
 const closeAlert = (el) => {
-  el.addEventListener("click", (e) =>{
-     e.target.classList.add('hide')
-  }
-  )
+  el.addEventListener("click", (e) => {
+    e.target.classList.add("hide");
+  });
   return el;
 };
 
-const showAlert =  (element) => {
+const showAlert = (element) => {
   element.classList.add("show");
   setTimeout(() => {
     element.classList.add("hide");
   }, 10000);
-  element?.classList?.remove('hide')
+  element?.classList?.remove("hide");
 };
 
 closeAlert(alertDanger);
