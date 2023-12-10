@@ -2029,8 +2029,13 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#323232\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 50 50 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -2039,10 +2044,6 @@ video {
 
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
 }
 
 .bg-opacity-80 {
@@ -2377,6 +2378,10 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2569,6 +2574,14 @@ video {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-perfectInset {
+  --tw-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.05),
+                       inset 0px -10px 20px 0px rgba(0, 0, 0, 0.05),
+                       0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+  --tw-shadow-colored: 0px 40px 80px 0px var(--tw-shadow-color), inset 0px -10px 20px 0px var(--tw-shadow-color), 0px 10px 20px 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

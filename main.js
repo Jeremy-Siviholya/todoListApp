@@ -5,6 +5,8 @@ const span = document.getElementById("span");
 const alertDanger = document.querySelector(".danger-alert");
 const alertSuccess = document.querySelector(".alert-success");
 const alertDestroy = document.querySelector(".alert-destroy");
+const check = document.querySelector(".check");
+
 
 const handleAdd = (e) => {
   const nodeL = document.getElementById("tasks").content.cloneNode(true);
@@ -15,19 +17,15 @@ const handleAdd = (e) => {
     const value = input.value;
     box.appendChild(nodeL);
     showAlert(alertSuccess);
-    input.value == "";
+    input.value=''
     firstel.querySelector("span").innerHTML = value;
     const btn = firstel.querySelector("button");
-    const check = firstel.querySelector("input");
-    // check.addEventListener('click',()=>verify)
     btn.addEventListener("click", () => deleteTasks(firstel));
-    
   }
 };
 
-// const verify=(e)=>{
-//     e.target.classList.add('check')
-// }
+
+
 
 const deleteTasks = (element) => {
   element.remove();
