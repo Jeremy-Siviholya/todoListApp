@@ -27,6 +27,7 @@ const handleAdd = (e) => {
   }
 };
 
+
 const deleteTasks = (element) => {
   element.remove();
   showAlert(alertDestroy);
