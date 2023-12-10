@@ -44,6 +44,7 @@ const closeAlert = (el) => {
 };
 
 const showAlert = async (element) => {
+  document.querySelector('.show')?.classList.remove('show')
   await element.classList.add("show");
   setTimeout(() => {
     element.classList.add("hide");
