@@ -2360,6 +2360,11 @@ video {
   color: rgb(246 0 98 / var(--tw-text-opacity));
 }
 
+.text-perfectGray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(29 29 29 / var(--tw-text-opacity));
+}
+
 .text-perfectGreen-300 {
   --tw-text-opacity: 1;
   color: rgb(0 255 102 / var(--tw-text-opacity));
@@ -2373,15 +2378,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-transparent {
-  color: transparent;
-}
-
-.text-perfectGray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(29 29 29 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2850,6 +2846,8 @@ video {
     }
   }
 }
+
+
 
 
 

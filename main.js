@@ -22,6 +22,7 @@ const handleAdd = (e) => {
     btn.addEventListener("click", () => deleteTasks(firstel));
     firstel.querySelector("i").addEventListener("click", (e) => {
       e.target.classList.toggle('text-perfectGreen-300');
+      firstel.querySelector("span").classList.toggle("line-through");
     });
   }
 };
