@@ -19,15 +19,15 @@ const handleAdd = (e) => {
     firstel.querySelector("span").innerHTML = value;
     const btn = firstel.querySelector("button");
     const check = firstel.querySelector("input");
-    check.addEventListener('click',()=>verify)
+    // check.addEventListener('click',()=>verify)
     btn.addEventListener("click", () => deleteTasks(firstel));
     
   }
 };
 
-const verify=(e)=>{
-    e.target.classList.add('check')
-}
+// const verify=(e)=>{
+//     e.target.classList.add('check')
+// }
 
 const deleteTasks = (element) => {
   element.remove();
@@ -44,11 +44,11 @@ const closeAlert = (el) => {
 };
 
 const showAlert =  (element) => {
-  document.querySelector('.show')?.classList.remove('show')
   element.classList.add("show");
   setTimeout(() => {
     element.classList.add("hide");
   }, 10000);
+  element?.classList?.remove('hide')
 };
 
 closeAlert(alertDanger);
