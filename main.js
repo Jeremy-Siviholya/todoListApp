@@ -6,6 +6,7 @@ const alertDanger = document.querySelector(".danger-alert");
 const alertSuccess = document.querySelector(".alert-success");
 const alertDestroy = document.querySelector(".alert-destroy");
 const check = document.querySelector(".check");
+const alertClick = document.querySelector(".alert-click");
 
 const handleAdd = (e) => {
   const nodeL = document.getElementById("tasks").content.cloneNode(true);
@@ -51,5 +52,6 @@ const showAlert = (element) => {
 
 closeAlert(alertDanger);
 closeAlert(alertSuccess);
+closeAlert(alertDestroy)
 
 button.addEventListener("click", handleAdd);
