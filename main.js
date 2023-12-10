@@ -9,7 +9,7 @@ const alertDestroy = document.querySelector(".alert-destroy");
 const handleAdd = (e) => {
   const nodeL = document.getElementById("tasks").content.cloneNode(true);
   const firstel = nodeL.firstElementChild;
-  if (input.value == "") {
+  if (input.value === "") {
     showAlert(alertDanger);
   } else {
     const value = input.value;
@@ -43,9 +43,9 @@ const closeAlert = (el) => {
   return el;
 };
 
-const showAlert = async (element) => {
+const showAlert =  (element) => {
   document.querySelector('.show')?.classList.remove('show')
-  await element.classList.add("show");
+  element.classList.add("show");
   setTimeout(() => {
     element.classList.add("hide");
   }, 10000);
