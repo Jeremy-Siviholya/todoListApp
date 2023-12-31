@@ -19,11 +19,33 @@
 }
 
 .scroll::-webkit-scrollbar-track {
-  @apply bg-perfectGray-100
+  @apply bg-perfectGray-100;
 }
 
+.hideToast {
+  @apply translate-x-[110%];
+}
 
+.toast {
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
 
+.toast::before {
+  content: "";
+  @apply h-[4px] bg-gray-300 absolute bottom-0 left-0 w-full;
+  /* animation: anim 5s forwards; */
+}
 
+.active {
+  animation: anim 5s forwards;
+}
 
+@keyframes anim {
+  100% {
+    @apply w-0;
+  }
+}
 
+.showToast {
+  @apply translate-x-0;
+}

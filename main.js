@@ -1,3 +1,5 @@
+import { toast } from "./JS/toast.js";
+
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const box = document.querySelector("#box");
@@ -12,6 +14,7 @@ const handleAdd = (e) => {
   const nodeL = document.getElementById("tasks").content.cloneNode(true);
   const firstel = nodeL.firstElementChild;
   if (input.value === "") {
+    toast();
     showAlert(alertDanger);
   } else {
     const value = input.value;
@@ -22,12 +25,11 @@ const handleAdd = (e) => {
     const btn = firstel.querySelector("button");
     btn.addEventListener("click", () => deleteTasks(firstel));
     firstel.querySelector("i").addEventListener("click", (e) => {
-      e.target.classList.toggle('text-perfectGreen-300');
+      e.target.classList.toggle("text-perfectGreen-300");
       firstel.querySelector("span").classList.toggle("line-through");
     });
   }
 };
-
 
 const deleteTasks = (element) => {
   element.remove();
@@ -52,6 +54,6 @@ const showAlert = (element) => {
 
 closeAlert(alertDanger);
 closeAlert(alertSuccess);
-closeAlert(alertDestroy)
+closeAlert(alertDestroy);
 
-button.addEventListener("click", handleAdd);
+button?.addEventListener("click", handleAdd);

@@ -54,6 +54,30 @@
           />
         </svg>
       </div>
+
+      <div class="w-72 h-16 absolute bottom-5 rounded-md right-3">
+        <div
+          class="relative shadow-md z-50 danger-alert w-full h-full overflow-hidden gap-3 px-3 cursor-default rounded-md hideToast toast flex items-center text-[20px] bg-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-6 h-6 text-perfect-200"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <div class="w-full h-full cursor-default absolute"></div>
+          <span class="text-gray-700 cursor-default">complete task</span>
+          <div
+            class="w-full h-[4px] absolute left-0 loader bottom-0 bg-perfect-200"
+          ></div>
+        </div>
+      </div>
       <!-- alert success -->
       <div
         class="absolute right-4 z-50 -top-20 bg-perfectGray-200 shadow-perfectInset w-72 h-14 alert-success duration-500 cursor-default flex justify-between px-3 rounded-md items-center"
@@ -79,7 +103,9 @@
       <div
         class="absolute right-4 z-50 -top-20 bg-perfectGray-200 w-72 h-14 alert-destroy duration-500 cursor-default flex justify-between px-3 rounded-md items-center"
       >
-        <span class="text-perfect-300 font-semibold uppercase">task Destroyed</span>
+        <span class="text-perfect-300 font-semibold uppercase"
+          >task Destroyed</span
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -97,7 +123,7 @@
         class="w-96 relative h-[500px] bg-perfectGray-100 bg-opacity-70 overflow-hidden backdrop-blur-lg rounded-md"
       >
         <div
-          class="h-20 bg-perfectGray-100 text-center  mt-3 mx-3 px-5 flex rounded-t-md justify-start gap-4 items-center"
+          class="h-20 bg-perfectGray-100 text-center mt-3 mx-3 px-5 flex rounded-t-md justify-start gap-4 items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -158,11 +184,13 @@
               >
                 <div class="rounded-full w-5 h-5 bg-perfectGray-100">
                   <i
-                    class="bx bxs-check-circle  text-[20px] text-perfectGray-100"
+                    class="bx bxs-check-circle text-[20px] text-perfectGray-100"
                   ></i>
                 </div>
 
-                <span id="span" class="text-white font-semibold  uppercase">TASK ONE</span>
+                <span id="span" class="text-white font-semibold uppercase"
+                  >TASK ONE</span
+                >
                 <button>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
