@@ -2,15 +2,14 @@
 const toastView = document.querySelector(".toast");
 //   modalUpdate = document.querySelector(".modalUpdate");
 
-const beforetoast = toastView.querySelector(".loader");
-export const toast = () => {
-  const span = toastView.querySelector("span");
+export const toast = (span) => {
+  const beforetoast = toastView.querySelector(".loader");
+  span = toastView.querySelector("span");
   //   span.innerHTML = res.data;
 
-  beforetoast.classList?.remove("active");
-  console.log(beforetoast);
   beforetoast.classList.add("active");
-  console.log(beforetoast);
+  beforetoast.classList.remove("bg-gray-200");
+
   //   modal.classList.remove("showModal");
 
   //   modalUpdate.classList.remove("showModal");
@@ -23,6 +22,8 @@ export const toast = () => {
   });
 
   setTimeout(() => {
+    beforetoast.classList.add("bg-gray-200");
+    beforetoast.classList.remove("active");
     toastView.classList.remove("showToast");
     toastView.classList.add("hideToast");
   }, 5000);
