@@ -2,11 +2,15 @@
 const toastView = document.querySelector(".toast");
 //   modalUpdate = document.querySelector(".modalUpdate");
 
-const beforetoast = toastView?.querySelector(".loader");
+const beforetoast = toastView.querySelector(".loader");
 export const toast = () => {
   const span = toastView.querySelector("span");
   //   span.innerHTML = res.data;
-  beforetoast?.classList?.add("active");
+
+  beforetoast.classList?.remove("active");
+  console.log(beforetoast);
+  beforetoast.classList.add("active");
+  console.log(beforetoast);
   //   modal.classList.remove("showModal");
 
   //   modalUpdate.classList.remove("showModal");
